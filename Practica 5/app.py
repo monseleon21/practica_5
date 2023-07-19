@@ -45,6 +45,8 @@ def editar(id):
   consultId=cursoID.fetchone()
   return render_template('editarAlbum.html', album=consultId)
 
+#sale album
+
 @app.route('/actualizar/<id>',methods=['POST'])
 def actualizar(id):
 
