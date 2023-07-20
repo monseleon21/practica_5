@@ -1,18 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD Albums</title>
-</head>
-<body>
 
-    <br>
+   {% extends 'plantilla.html'%}
+   
+   {% block body %}
+
+   
+   <br>
     <br>
     <h1>Gestion de albums</h1>
     <br>
-    <br>
-
+    
     {% with mensajes= get_flashed_messages() %}
        {% if mensajes %}
           {% for msj in mensajes %}
@@ -64,5 +60,6 @@
 
 </table>
 
-</body>
-</html>
+# incrusta de lo arriba y abajo que corresponga de la plantilla
+
+{% endblock %}
