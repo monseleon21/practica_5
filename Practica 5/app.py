@@ -22,7 +22,7 @@ def index():
 
 #rura http:localhost:5000/guardar tipo POST para insert
 @app.route('/guardar',methods=['POST'])
-def guardar():
+def guardar(): 
   if request.method == 'POST':
 
     # pasamos a variables el contenido de los input
